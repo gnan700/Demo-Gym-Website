@@ -1,0 +1,29 @@
+@media (max-width: 980px) {
+  .hero-grid, .why-grid, .about-grid, .owner-grid, .faq-contact-grid, .map-grid, .contact-grid, .footer-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid, .pricing-grid, .gallery-preview { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 760px) {
+  .nav-toggle { display: block; }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--surface-strong);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 1rem;
+    width: min(260px, calc(100% - 2rem));
+    box-shadow: var(--shadow);
+    display: none;
+  }
+  .nav-links.open { display: flex; }
+  .section { padding: 4.5rem 0; }
+  .hero { padding-top: 2.5rem; }
+  .stats-grid, .services-grid, .pricing-grid, .gallery-preview { grid-template-columns: 1fr; }
+  .hero-meta { flex-direction: column; align-items: flex-start; }
+  .footer-bottom { flex-direction: column; gap: 0.8rem; align-items: flex-start; }
+}

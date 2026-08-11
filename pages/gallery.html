@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Northstar Performance</title>
+    <meta name="description" content="View the premium training spaces and atmosphere at Northstar Performance." />
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="loading-screen" aria-hidden="true"><div class="loader-ring"></div></div>
+    <div class="progress-bar" aria-hidden="true"></div>
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="../index.html" class="brand"><span class="brand-mark">N</span><span>Northstar Performance</span></a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html" class="active">Gallery</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="testimonials.html">Reviews</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <button class="theme-toggle" aria-label="Toggle color theme">☀️</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero section">
+        <div class="container">
+          <p class="eyebrow">Gallery</p>
+          <h1>View our spaces, members, and recovery environment.</h1>
+        </div>
+      </section>
+
+      <section class="section section-light">
+        <div class="container">
+          <div class="gallery-filters reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="training">Training</button>
+            <button class="filter-btn" data-filter="recovery">Recovery</button>
+            <button class="filter-btn" data-filter="lounge">Lounge</button>
+          </div>
+          <div class="gallery-grid reveal">
+            <figure class="gallery-card" data-category="training"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt="Strength training floor" /><figcaption>Strength Floor</figcaption></figure>
+            <figure class="gallery-card" data-category="recovery"><img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=80" alt="Recovery lounge" /><figcaption>Recovery Lounge</figcaption></figure>
+            <figure class="gallery-card" data-category="training"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Coach coaching client" /><figcaption>Private Coaching</figcaption></figure>
+            <figure class="gallery-card" data-category="lounge"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt="Wellness lounge" /><figcaption>Wellness Lounge</figcaption></figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" aria-hidden="true"><button class="lightbox-close">×</button><img src="" alt="Expanded gallery image" /></div>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><a href="../index.html" class="brand brand-footer"><span class="brand-mark">N</span><span>Northstar Performance</span></a><p>Where performance and comfort meet.</p></div>
+        <div><h3>Quick Links</h3><ul><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><h3>Follow</h3><ul><li><a href="https://instagram.com">Instagram</a></li><li><a href="https://facebook.com">Facebook</a></li><li><a href="https://linkedin.com">LinkedIn</a></li></ul></div>
+      </div>
+      <div class="container footer-bottom"><p>© 2026 Northstar Performance</p><div><a href="privacy.html">Privacy</a><a href="contact.html">Terms</a></div></div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/darkmode.js"></script>
+    <script src="../js/slider.js"></script>
+  </body>
+</html>
